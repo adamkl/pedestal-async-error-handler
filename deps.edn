@@ -1,0 +1,7 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.2"}
+        io.pedestal/pedestal.service {:mvn/version "0.5.8"}
+        org.clojure/core.async {:mvn/version "1.3.610"}}
+ :aliases {:dev {:extra-paths ["dev" "test"]}
+           :test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.0.732"}}
+                  :main-opts ["-m" "kaocha.runner"]}}}
